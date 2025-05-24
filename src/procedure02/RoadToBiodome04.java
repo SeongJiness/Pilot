@@ -1,10 +1,11 @@
 package procedure02;
 
+import java.util.Stack;
+
 public class RoadToBiodome04 {
     public static void main(String[] args) {
         int minIndex = 0; //최솟값을 가리키는 인덱스 변수
         int[] arr = new int[args.length];
-
         for(int i = 0; i < args.length; i++) {
             arr[i] = Integer.parseInt(args[i]);
         }
