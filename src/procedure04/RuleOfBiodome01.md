@@ -40,6 +40,7 @@ SOLID 원칙의 등장과 필요성
 
 위반한 부분: addBook()과 removeBook()을 모든 User 하위 클래스에 강제로 구현하도록 강요함.
 문제점: 새로운 역할(User 하위 클래스)을 추가하거나 변경하려면 기존 코드도 자주 수정하게 됨 → OCP 위반.
+
 3.리스코프 치환 원칙 (LSP, Liskov Substitution Principle)
 자식 클래스는 언제나 부모 클래스의 역할을 대체할 수 있어야 한다.
 
