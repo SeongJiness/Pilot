@@ -1,9 +1,8 @@
-package procedure05;
+package procedure05.problem01;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 public class BiodomeForever01 {
@@ -23,7 +22,7 @@ public class BiodomeForever01 {
         FileInputStream input = null;
 
         try {
-            File file = new File("C:\\Users\\LeeSeongJin\\IdeaProjects\\Pilot\\src\\procedure05\\" + filename);
+            File file = new File("C:\\Users\\LeeSeongJin\\IdeaProjects\\Pilot\\src\\procedure05\\problem01\\" + filename);
 
             input = new FileInputStream(file);
 

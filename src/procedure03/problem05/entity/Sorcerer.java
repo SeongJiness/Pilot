@@ -42,7 +42,7 @@ public class Sorcerer {
 
         // 유물이 에너지 생성 인터페이스를 구현하고 있는 경우
         if (artifact instanceof EnergyGenerator) {
-            ((EnergyGenerator) artifact).generateEnergy();
+            ((EnergyGenerator) artifact).generateEnergy(); //형변환
         } else {
             System.out.println("에너지 생성 능력이 없습니다.");
         }
