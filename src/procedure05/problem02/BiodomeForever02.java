@@ -23,6 +23,10 @@ public class BiodomeForever02 {
         try {
             File file = new File("C:\\Users\\LeeSeongJin\\IdeaProjects\\Pilot\\src\\procedure05\\problem02\\" + filename);
 
+            String date = filename.substring(0,11);
+
+            System.out.println(date);
+
             input = new FileInputStream(file);
 
             int i = 0;
@@ -33,7 +37,7 @@ public class BiodomeForever02 {
             System.out.println("존재하지 않는 파일입니다. 파일 이름을 다시 확인해주세요.");
         } catch (IOException e) {
             System.out.println("파일 읽기 중 오류 발생: " + e.getMessage());
-        }finally {
+        } finally {
             try {
                 if (input != null) input.close();
             } catch (IOException e) {

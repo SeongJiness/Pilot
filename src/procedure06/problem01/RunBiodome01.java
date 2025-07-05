@@ -25,8 +25,8 @@ public class RunBiodome01 {
 
         List<String> welcomeMessages = memberList.stream()
                 .filter(name -> name.startsWith("신입-"))
-                .map(name -> name.replace("신입-", "") + "님 환영합니다")
-                .collect(Collectors.toList());
+                .map(name -> name.replace("신입-", "") + "님 환영합니다") //스트림의 각 요소를 다른 값으로 변환
+                .collect(Collectors.toList()); //Stream의 요소들을 List로 모아준다.
 
         System.out.println(welcomeMessages);
     }
